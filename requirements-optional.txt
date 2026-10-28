@@ -1,0 +1,6 @@
+# Only for user-supplied, licensed local model weights and video processing.
+-r requirements.txt
+torch>=2.6
+transformers>=4.45,<5
+sentence-transformers>=3
+imageio-ffmpeg>=0.5

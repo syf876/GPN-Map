@@ -1,0 +1,88 @@
+[
+  {
+    "id": "jiuquanzi-huayingliutiao",
+    "title": "酒泉子·花映柳条",
+    "author": "温庭筠",
+    "dynasty": "唐",
+    "content": "花映柳条，闲向绿萍池上。凭栏干，窥细浪，雨萧萧。",
+    "match_inputs": [
+      "酒泉子·花映柳条",
+      "酒泉子 花映柳条",
+      "花映柳条",
+      "酒泉子·花映柳条 温庭筠",
+      "花映柳条，闲向绿萍池上。凭栏干，窥细浪，雨萧萧。",
+      "花映柳条，闲向绿萍池上。\n凭栏干，窥细浪，雨萧萧。\n近来音信两疏索，洞房空寂寞。\n掩银屏，垂翠箔，度春宵。"
+    ],
+    "place": "酒泉",
+    "places": [
+      "酒泉",
+      "河西绿洲",
+      "春日水岸"
+    ],
+    "imagery": [
+      "柳条",
+      "春风",
+      "绿洲",
+      "水岸",
+      "酒泉地域意象"
+    ],
+    "emotion": "清柔含蓄",
+    "cached_image_url": "/static/demo/jiuquanzi_huayingliutiao/image.png",
+    "cached_video_url": "/static/demo/jiuquanzi_huayingliutiao/video.mp4",
+    "narrative_note": "以酒泉绿洲水岸为地理底色，让柳条、春风和细浪形成柔和连贯的春日叙事。",
+    "saved_result_url": "/static/demo/jiuquanzi_huayingliutiao/result.json"
+  },
+  {
+    "id": "shizhisaishang-damo",
+    "title": "使至塞上",
+    "author": "王维",
+    "dynasty": "唐",
+    "content": "单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。",
+    "match_inputs": [
+      "大漠孤烟直，长河落日圆",
+      "使至塞上",
+      "使至塞上 王维",
+      "单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。"
+    ],
+    "place": "大漠",
+    "places": [],
+    "imagery": [
+      "大漠",
+      "孤烟",
+      "长河",
+      "落日"
+    ],
+    "emotion": "思乡",
+    "cached_image_url": "/static/demo/shizhisaishang/image.png",
+    "cached_video_url": "/static/demo/shizhisaishang/video.mp4",
+    "narrative_note": "使用已保存的《使至塞上》语义解析、空间定位、意境图和视频。",
+    "saved_result_url": "/static/demo/shizhisaishang/result.json"
+  },
+  {
+    "id": "liangzhouci",
+    "title": "凉州词",
+    "author": "王之涣",
+    "dynasty": "唐",
+    "content": "黄河远上白云间，一片孤城万仞山。羌笛何须怨杨柳，春风不度玉门关。",
+    "match_inputs": [
+      "凉州词",
+      "羌笛何须怨杨柳，春风不度玉门关。",
+      "春风不度玉门关"
+    ],
+    "place": "玉门关",
+    "places": [
+      "玉门关"
+    ],
+    "imagery": [
+      "羌笛",
+      "杨柳",
+      "春风",
+      "玉门关"
+    ],
+    "emotion": "思乡",
+    "cached_image_url": "/static/demo/liangzhouci/image.png",
+    "cached_video_url": "/static/demo/liangzhouci/video.mp4",
+    "saved_result_url": "/static/demo/liangzhouci/result.json",
+    "narrative_note": "本地保存的演示媒体，不触发实时生成。"
+  }
+]

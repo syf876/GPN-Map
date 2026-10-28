@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "task": "imagery",
+    "description": "河西走廊诗词意象分类标签体系（6大类，规则自动打标，需人工校对）",
+    "total_classes": 6,
+    "auto_generated": true,
+    "needs_human_review": true
+  },
+  "labels": [
+    {
+      "id": "IMG_FRONTIER",
+      "zh": "边塞军旅",
+      "en": "frontier_military",
+      "description": "涉及边疆征战、军队驻守、烽火戍边等意象",
+      "trigger_keywords": ["烽", "戍", "征", "战", "旌", "甲", "兵", "将", "帅", "弓", "剑", "刀", "营", "鼓", "角", "铁骑", "铁衣", "瀚海", "流沙", "塞", "边"]
+    },
+    {
+      "id": "IMG_DESERT",
+      "zh": "大漠风光",
+      "en": "desert_landscape",
+      "description": "以黄沙、戈壁、大漠、风沙等自然地貌为主要意象",
+      "trigger_keywords": ["沙", "漠", "黄沙", "风沙", "大漠", "戈壁", "黄尘", "胡沙", "朔漠", "穷荒"]
+    },
+    {
+      "id": "IMG_PASS",
+      "zh": "关塞离别",
+      "en": "pass_farewell",
+      "description": "以关口（阳关、玉门关、河西走廊各关隘）为背景，侧重送别离愁",
+      "trigger_keywords": ["关", "玉门", "阳关", "送", "别", "离", "折柳", "长亭", "孤蓬", "征人", "远客", "相送"]
+    },
+    {
+      "id": "IMG_HOMESICK",
+      "zh": "思乡怀人",
+      "en": "homesickness",
+      "description": "对故乡、亲人、故人的思念，常伴随羁旅意象",
+      "trigger_keywords": ["故乡", "乡", "思", "归", "梦", "远", "望", "泪", "书信", "雁书", "家", "客", "羁", "旅", "迷途", "断肠"]
+    },
+    {
+      "id": "IMG_NATURE",
+      "zh": "自然意象",
+      "en": "nature",
+      "description": "月、雁、云、雪、风、柳、花等常见自然意象，不以军旅或离别为主",
+      "trigger_keywords": ["月", "雁", "云", "雪", "风", "柳", "花", "草", "水", "霜", "冰", "星", "日", "春", "秋", "鸟", "鸿"]
+    },
+    {
+      "id": "IMG_FEAST",
+      "zh": "饮酒宴乐",
+      "en": "feast_celebration",
+      "description": "以饮酒、宴会、歌舞为主要场景",
+      "trigger_keywords": ["酒", "饮", "宴", "乐", "歌", "舞", "弦", "琵琶", "杯", "觞", "醉", "陶"]
+    }
+  ],
+  "auto_rule": {
+    "type": "keyword_match_any",
+    "note": "对每首诗的 text 字段逐类扫描 trigger_keywords，命中则打标；一首诗可同时命中多类（多标签）。未命中任何类标记为空。"
+  }
+}

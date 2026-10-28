@@ -1,0 +1,79 @@
+{
+  "_meta": {
+    "task": "emotion",
+    "description": "河西走廊诗词情绪分类标签体系（6类，lexicon_scoring_v1 伪标签，置信度加权训练）",
+    "total_classes": 6,
+    "auto_generated": true,
+    "needs_human_review": false,
+    "current_coverage": "1230/1230 (100.0%，lexicon_scoring_v1 全自动伪标签)",
+    "distribution": {
+      "EMO_SORROWFUL": 154,
+      "EMO_BOLD": 108,
+      "EMO_HOMESICK": 432,
+      "EMO_MELANCHOLY": 269,
+      "EMO_LEISURELY": 254,
+      "EMO_INDIGNANT": 13
+    },
+    "confidence": {
+      "mean": 0.544,
+      "high_ge0.65": 280,
+      "mid_0.45-0.65": 611,
+      "low_lt0.45": 339
+    },
+    "training_readiness": "READY_CONFIDENCE_WEIGHTED"
+  },
+  "labels": [
+    {
+      "id": "EMO_SORROWFUL",
+      "zh": "悲壮",
+      "en": "sorrowful_heroic",
+      "description": "悲凉中带豪情，多见于边塞送别、战死沙场等主题"
+    },
+    {
+      "id": "EMO_BOLD",
+      "zh": "豪放",
+      "en": "bold_heroic",
+      "description": "慷慨激昂、气势磅礴，多见于出征、报国主题"
+    },
+    {
+      "id": "EMO_HOMESICK",
+      "zh": "思乡",
+      "en": "homesick",
+      "description": "对故土和亲人的深切思念，语气哀婉"
+    },
+    {
+      "id": "EMO_MELANCHOLY",
+      "zh": "哀愁",
+      "en": "melancholy",
+      "description": "淡淡忧伤，以个人际遇为主，不含边塞慷慨"
+    },
+    {
+      "id": "EMO_LEISURELY",
+      "zh": "闲适",
+      "en": "leisurely",
+      "description": "平和安逸，描绘自然风物或宴饮生活"
+    },
+    {
+      "id": "EMO_INDIGNANT",
+      "zh": "愤慨",
+      "en": "indignant",
+      "description": "对战争、政治或命运的愤怒与控诉"
+    }
+  ],
+  "auto_rule": {
+    "type": "lexicon_scoring_v1",
+    "steps": [
+      "step1: 对 text 按三权重词典（w3/w2/w1）打分并按 sqrt(文本长度/50) 归一化",
+      "step2: 词典无信号时，从意象标签集推断情绪（imagery_fallback）",
+      "step3: 仍无信号时默认 EMO_MELANCHOLY（哀愁）"
+    ],
+    "confidence_rules": "lexicon_w3→base0.78, lexicon_w2→0.62, lexicon_w1→0.44, imagery→0.26–0.40；均+差距奖励",
+    "training_notes": [
+      "置信度加权交叉熵：loss = Σ conf_i * CrossEntropy(pred_i, label_i)",
+      "conf < 0.45 的样本训练权重降为 0.3（339首），不排除，参与半监督迭代",
+      "推荐训练顺序：dynasty → place_specific → imagery → emotion（多任务逐步解锁）",
+      "emotion 头收敛后，用其预测结果替换低置信伪标签，迭代一次即可提升整体质量"
+    ],
+    "replaced": "原 emotion_qwen.py / emotion_qwen_test50.py（Qwen API 方案，已删除）"
+  }
+}

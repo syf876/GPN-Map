@@ -1,0 +1,673 @@
+{
+  "ok": true,
+  "prediction": {
+    "text": "大漠孤烟直，长河落日圆",
+    "dynasty": {
+      "id": "DYN_TANG",
+      "label": "唐",
+      "confidence": 0.9825,
+      "probabilities": {
+        "DYN_TANG": 0.9825,
+        "DYN_SONG": 0.0035,
+        "DYN_WUDAI": 0.014
+      }
+    },
+    "place": {
+      "id": "PLC_DAMO",
+      "label": "大漠",
+      "confidence": 0.9392,
+      "probabilities": {
+        "PLC_YUMENGUAN": 0.0027,
+        "PLC_YANGGUAN": 0.0056,
+        "PLC_SHAZHOU": 0.0083,
+        "PLC_DUNHUANG": 0.0072,
+        "PLC_GUAZHOU": 0.0076,
+        "PLC_YUMEN": 0.0023,
+        "PLC_JIUQUAN": 0.0017,
+        "PLC_GANZHOU": 0.0024,
+        "PLC_WUWEI": 0.0019,
+        "PLC_LIANGZHOU": 0.0034,
+        "PLC_HEXI": 0.0067,
+        "PLC_DAMO": 0.9392,
+        "PLC_HANHAI": 0.0067,
+        "PLC_LIUSHA": 0.0044
+      }
+    },
+    "imagery": {
+      "threshold": 0.5,
+      "labels": [
+        {
+          "id": "IMG_DESERT",
+          "label": "大漠风光",
+          "confidence": 0.7883
+        },
+        {
+          "id": "IMG_NATURE",
+          "label": "自然意象",
+          "confidence": 0.6909
+        },
+        {
+          "id": "IMG_FRONTIER",
+          "label": "边塞军旅",
+          "confidence": 0.5825
+        }
+      ],
+      "confidence": 0.7883,
+      "probabilities": {
+        "IMG_FRONTIER": 0.5825,
+        "IMG_DESERT": 0.7883,
+        "IMG_PASS": 0.4628,
+        "IMG_HOMESICK": 0.363,
+        "IMG_NATURE": 0.6909,
+        "IMG_FEAST": 0.3127
+      }
+    },
+    "emotion": {
+      "id": "EMO_HOMESICK",
+      "label": "思乡",
+      "confidence": 0.3344,
+      "probabilities": {
+        "EMO_SORROWFUL": 0.1715,
+        "EMO_BOLD": 0.1085,
+        "EMO_HOMESICK": 0.3344,
+        "EMO_MELANCHOLY": 0.2629,
+        "EMO_LEISURELY": 0.0917,
+        "EMO_INDIGNANT": 0.031
+      }
+    },
+    "confidence": {
+      "dynasty": 0.9825,
+      "place": 0.9392,
+      "imagery": 0.7883,
+      "emotion": 0.3344
+    },
+    "model": {
+      "mode": "saved_local_demo",
+      "device": "cpu"
+    },
+    "poem_info": {
+      "title": "使至塞上",
+      "author": "王维",
+      "dynasty": "唐",
+      "full_poem": "单车欲问边，属国过居延。\n征蓬出汉塞，归雁入胡天。\n大漠孤烟直，长河落日圆。\n萧关逢候吏，都护在燕然。"
+    },
+    "rag_context_count": 1,
+    "temporal_spatial_context": {
+      "dynasty": "唐",
+      "place": "大漠"
+    }
+  },
+  "map": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            96.0,
+            40.5
+          ]
+        },
+        "properties": {
+          "text": "大漠孤烟直，长河落日圆",
+          "dynasty": {
+            "id": "DYN_TANG",
+            "label": "唐",
+            "confidence": 0.9825,
+            "probabilities": {
+              "DYN_TANG": 0.9825,
+              "DYN_SONG": 0.0035,
+              "DYN_WUDAI": 0.014
+            }
+          },
+          "place": {
+            "id": "PLC_DAMO",
+            "label": "大漠",
+            "confidence": 0.9392,
+            "probabilities": {
+              "PLC_YUMENGUAN": 0.0027,
+              "PLC_YANGGUAN": 0.0056,
+              "PLC_SHAZHOU": 0.0083,
+              "PLC_DUNHUANG": 0.0072,
+              "PLC_GUAZHOU": 0.0076,
+              "PLC_YUMEN": 0.0023,
+              "PLC_JIUQUAN": 0.0017,
+              "PLC_GANZHOU": 0.0024,
+              "PLC_WUWEI": 0.0019,
+              "PLC_LIANGZHOU": 0.0034,
+              "PLC_HEXI": 0.0067,
+              "PLC_DAMO": 0.9392,
+              "PLC_HANHAI": 0.0067,
+              "PLC_LIUSHA": 0.0044
+            },
+            "coordinates": {
+              "place": "大漠",
+              "lon": 96.0,
+              "lat": 40.5,
+              "source": "poems_master.csv",
+              "support": 69
+            }
+          },
+          "imagery": {
+            "threshold": 0.5,
+            "labels": [
+              {
+                "id": "IMG_DESERT",
+                "label": "大漠风光",
+                "confidence": 0.7883
+              },
+              {
+                "id": "IMG_NATURE",
+                "label": "自然意象",
+                "confidence": 0.6909
+              },
+              {
+                "id": "IMG_FRONTIER",
+                "label": "边塞军旅",
+                "confidence": 0.5825
+              }
+            ],
+            "confidence": 0.7883,
+            "probabilities": {
+              "IMG_FRONTIER": 0.5825,
+              "IMG_DESERT": 0.7883,
+              "IMG_PASS": 0.4628,
+              "IMG_HOMESICK": 0.363,
+              "IMG_NATURE": 0.6909,
+              "IMG_FEAST": 0.3127
+            },
+            "icons": [
+              {
+                "id": "IMG_DESERT",
+                "label": "大漠风光",
+                "icon": "dunes",
+                "confidence": 0.7883
+              },
+              {
+                "id": "IMG_NATURE",
+                "label": "自然意象",
+                "icon": "leaf",
+                "confidence": 0.6909
+              },
+              {
+                "id": "IMG_FRONTIER",
+                "label": "边塞军旅",
+                "icon": "shield",
+                "confidence": 0.5825
+              }
+            ],
+            "primary_icon": "dunes"
+          },
+          "emotion": {
+            "id": "EMO_HOMESICK",
+            "label": "思乡",
+            "confidence": 0.3344,
+            "probabilities": {
+              "EMO_SORROWFUL": 0.1715,
+              "EMO_BOLD": 0.1085,
+              "EMO_HOMESICK": 0.3344,
+              "EMO_MELANCHOLY": 0.2629,
+              "EMO_LEISURELY": 0.0917,
+              "EMO_INDIGNANT": 0.031
+            },
+            "color": "#2563eb"
+          },
+          "confidence": {
+            "dynasty": 0.9825,
+            "place": 0.9392,
+            "imagery": 0.7883,
+            "emotion": 0.3344
+          },
+          "popup": "<strong>大漠孤烟直，长河落日圆</strong><br/>地点：大漠 (0.9392)<br/>情绪：思乡 (0.3344)<br/>意象：大漠风光, 自然意象, 边塞军旅"
+        }
+      }
+    ],
+    "metadata": {
+      "format": "geojson",
+      "coordinate_source": "poems_master.csv",
+      "model": {
+        "mode": "saved_local_demo",
+        "device": "cpu"
+      }
+    }
+  },
+  "planner": {
+    "provider": "qwen-fallback",
+    "mode": "fallback",
+    "query": "大漠孤烟直，长河落日圆",
+    "query_variants": [
+      {
+        "name": "original",
+        "query": "大漠孤烟直，长河落日圆"
+      },
+      {
+        "name": "original_plus_imagery",
+        "query": "大漠孤烟直，长河落日圆 大漠风光 边塞军旅 大漠"
+      },
+      {
+        "name": "theme",
+        "query": "边塞 大漠 长河 黄河 思乡 纪录片 风光 航拍"
+      },
+      {
+        "name": "geo",
+        "query": "大漠 边塞 纪录片 风光 航拍"
+      }
+    ],
+    "keywords": [
+      "边塞",
+      "大漠",
+      "长河",
+      "黄河",
+      "落日",
+      "孤烟",
+      "旅拍",
+      "远行",
+      "河",
+      "大漠风光",
+      "边塞军旅",
+      "思乡"
+    ],
+    "negative_terms": [
+      "带货",
+      "口播",
+      "广告",
+      "纯字幕",
+      "游戏",
+      "直播切片",
+      "搞笑配音",
+      "二次元",
+      "鬼畜",
+      "商品橱窗",
+      "美妆口播",
+      "概念设计",
+      "概念片",
+      "纯图片",
+      "图文",
+      "壁纸",
+      "PPT",
+      "AI绘画",
+      "治愈系vlog"
+    ],
+    "platform_hints": [
+      "bilibili"
+    ],
+    "scene_tags": [
+      "大漠",
+      "孤烟",
+      "落日",
+      "黄河",
+      "长河",
+      "旅拍",
+      "远行",
+      "边塞"
+    ],
+    "reasoning": "fallback planner emits four stable Bilibili rounds: original, original_plus_imagery, theme, and geo."
+  },
+  "video": {
+    "ok": false,
+    "status": "not_requested",
+    "message": "本地演示未发起在线检索，可手动检索现实影像。",
+    "warnings": [],
+    "query": "大漠 实景 航拍",
+    "best": null,
+    "candidates": [],
+    "best_reason": "",
+    "priority_hit": "",
+    "candidate_source_distribution": {},
+    "candidate_count": 0,
+    "selected_index": 0
+  },
+  "storyContext": {
+    "input_text": "单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。",
+    "full_poem": "单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。",
+    "title": "",
+    "author": "",
+    "dynasty": "唐",
+    "primary_place": {
+      "id": "PLC_DAMO",
+      "label": "大漠",
+      "lng": 96.0,
+      "lat": 40.5,
+      "confidence": 0.9392
+    },
+    "candidate_places": [
+      {
+        "id": "PLC_DAMO",
+        "label": "大漠",
+        "lng": 96.0,
+        "lat": 40.5,
+        "confidence": 0.9392
+      },
+      {
+        "id": "PLC_SHAZHOU",
+        "label": "沙州",
+        "lng": 94.66,
+        "lat": 40.14,
+        "confidence": 0.0083
+      },
+      {
+        "id": "PLC_GUAZHOU",
+        "label": "瓜州",
+        "lng": 95.78,
+        "lat": 40.52,
+        "confidence": 0.0076
+      },
+      {
+        "id": "PLC_DUNHUANG",
+        "label": "敦煌",
+        "lng": 94.66,
+        "lat": 40.14,
+        "confidence": 0.0072
+      }
+    ],
+    "imagery": [
+      "大漠风光",
+      "自然意象",
+      "边塞军旅"
+    ],
+    "emotion": "思乡",
+    "route_theme": {
+      "id": "frontier-military",
+      "name": "边塞军旅路线",
+      "summary": "以关城、军镇与防线节点展开河西走廊的边塞征行叙事。",
+      "reason": "基于主地点 大漠 与边塞/关隘语义线索匹配边塞军旅路线。"
+    },
+    "route_nodes": [
+      {
+        "name": "武威",
+        "lng": 102.6347,
+        "lat": 37.9282,
+        "description": "凉州军镇，自古是河西防务重地。"
+      },
+      {
+        "name": "张掖",
+        "lng": 100.4498,
+        "lat": 38.9259,
+        "description": "河西中段控制点，兼具驻防与补给作用。"
+      },
+      {
+        "name": "酒泉",
+        "lng": 98.5174,
+        "lat": 39.7432,
+        "description": "西向防线的重要节点，承接军旅交通。"
+      },
+      {
+        "name": "嘉峪关",
+        "lng": 98.2773,
+        "lat": 39.7865,
+        "description": "关城雄踞西陲，是边塞诗中的经典坐标。"
+      },
+      {
+        "name": "玉门关",
+        "lng": 93.8631,
+        "lat": 40.3603,
+        "description": "古关遗址，承载远征与边塞寒意。"
+      },
+      {
+        "name": "阳关",
+        "lng": 94.6767,
+        "lat": 39.9398,
+        "description": "送别与西征叙事常在此展开。"
+      }
+    ],
+    "narrative_steps": [
+      {
+        "id": "poem_identification",
+        "title": "诗词识别",
+        "summary": "未匹配到整首诗，当前按输入诗句继续后续叙事。",
+        "status": "input_only"
+      },
+      {
+        "id": "poet_dynasty_context",
+        "title": "诗人/朝代背景",
+        "summary": "当前故事以 唐 语境推进。",
+        "status": "available"
+      },
+      {
+        "id": "hexi_spatial_locating",
+        "title": "河西走廊空间定位",
+        "summary": "主地点定位到 大漠。",
+        "status": "available"
+      },
+      {
+        "id": "route_expansion",
+        "title": "地点与路线展开",
+        "summary": "推荐路线主题为“边塞军旅路线”，节点数 6。",
+        "status": "available"
+      },
+      {
+        "id": "imagery_emotion",
+        "title": "意象与情感解释",
+        "summary": "意象 大漠风光, 自然意象, 边塞军旅，情绪主调为 思乡。",
+        "status": "available"
+      },
+      {
+        "id": "image_generation",
+        "title": "意境图生成",
+        "summary": "已生成统一图像提示词上下文，沿当前故事语境生成意境图。",
+        "status": "available"
+      },
+      {
+        "id": "ai_video_generation",
+        "title": "AI叙事视频生成",
+        "summary": "已生成统一视频提示词上下文，沿完整诗句与空间叙事生成视频。",
+        "status": "available"
+      },
+      {
+        "id": "reference_video",
+        "title": "现实影像参考",
+        "summary": "本地演示未发起在线检索，可手动检索现实影像。",
+        "status": "not_requested"
+      }
+    ],
+    "image_prompt_context": "请根据以下诗词分析生成一张横版“诗词意境图”主舞台画面。\n16:9 horizontal landscape composition, wide cinematic frame, suitable for website hero stage, not vertical poster, not portrait layout, no text, no watermark.\n风格要求：国风、水墨与淡彩结合、诗意意境插画、非写实摄影、留白克制、适合网页宽屏主舞台预览。\n构图要求：横版宽屏构图，16:9，宽幅电影画面，铺满主舞台，主体清晰，远中近景完整，河西走廊边塞空间横向展开；不要竖版人物海报、不要肖像/竖屏布局、不要手机壁纸构图、不要标题排版、不要文字说明、不要地图、不要边界线、不要图例、不要 UI。\ntitle: \nauthor: \ndynasty: 唐\ncontent: 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。\nplaces: 大漠\nimagery: 大漠风光、自然意象、边塞军旅\nemotion: 思乡\nanalysis_text: \n请把地点、意象和情绪融合为同一幅中国古典诗意画面，突出河西走廊相关自然地貌与边塞气质；关隘、沙漠、远山、古道、云影、风沙等横向空间层次要清晰，画面适配网页主舞台宽屏展示，但不要做成地图或海报。\n边塞诗安全构图要求：即使是《凉州词》《从军行》或玉门关相关诗句，也不要画士兵、盔甲、武器、战争、血腥、冲突、旗帜、火焰或攻击动作；改画远处关城、荒漠古道、柳树、山影、旅人远景背影或无人物的安全画面。",
+    "video_prompt_context": "请根据以下诗词信息生成一段有声中国古典诗词意境短视频。\nWan I2V 参数语义：模型保持 wan2.6-i2v-flash，resolution=720P，audio=true，目标时长约 15 秒。\nEnglish hard rule: Use the provided image as the exact opening first frame. After the first frame, continue into a cinematic narrative sequence with clear scene progression, not just subtle motion or slight camera shake. Do not remain a near-static animated illustration.\nContinue from this image into a 15-second narrative sequence. Do not create a new unrelated opening scene. Do not merely animate the still image.\nThe first 0-1 seconds should match the original composition, then the film must move beyond a poster-like animation into new connected foreground, midground, and background details.\n核心视频要求：必须以当前意境图作为开场首帧，后续画面要继续生成叙事变化，而不是只让原图轻微晃动、呼吸、慢推、局部风动或做静态图微动。\n以输入图片作为视频第一帧和视觉风格参考，开场保持原图构图；随后在 15 秒内生成连续叙事镜头，后续画面必须有新景别、新前景/中景/远景细节和可见空间推进。\n15 秒连续镜头叙事：0-3 秒保留首帧构图，风起云动，水流/沙洲/草木开始变化；3-10 秒旅人沿河道或古道前行，镜头缓慢推进或平移，远处关城逐渐靠近，飞鸟掠过，月色、云影、水面、风沙和柳枝持续变化；10-15 秒镜头继续推进到关隘、远山或沙洲，环境光影变化增强，形成思乡、边塞、旅途的故事感结尾。\n连续变化的具体视觉动作必须明显出现，可组合使用：云层移动、风沙流动、水面流动、柳枝摇曳、飞鸟掠过、旅人行走、驼队远景经过、镜头推进、镜头平移、镜头拉远、远处关城逐渐显现。\n镜头要保持首帧画风、场景、主体、空间方位和整体构图逻辑连续，不要突然换成完全不同的画面，也不要只做局部轻微动效；不要现代 UI、字幕、海报排版、水印或地图元素。\n画面风格：国风、水墨与淡彩结合、边塞诗意、电影感光影、层次分明、气氛连贯。\n连续叙事设计：以首帧为开场，保留首帧中的主体、构图、色调和水墨淡彩笔触；0-3 秒在 A distant gate town, ancient road, willow line, sandbar, mountains, and open desert horizon in the Hexi Corridor. 中让风沙流动、云影移动、水面或沙洲纹理变化、杨柳摇曳，建立 大漠 的边塞氛围；3-6 秒镜头自然推进到关城、城墙、古道、沙漠、远山或首帧已有景物的细节，空间层次明显变化；6-10 秒让旅人远景、驼队远景、飞鸟、云影或诗中主体转身、伫立、回望或缓步前行，在 A frontier road or open ground where the traveler can visibly advance through space and reveal another layer of the world. 中形成故事动作；10-13 秒跟随旅人/驼队/风沙继续前进，画面向关隘、沙漠、远山、城墙或道路深处递进；13-15 秒在 A closing landscape frame with road, wind, far mountains, and fading human presence so the story resolves into space. 中完成情绪收束。全程围绕诗词意象 大漠风光, 自然意象, 边塞军旅 和情绪 思乡 展开，不跳到无关新场景。\n音频要求：开启 audio=true，并严格按以下音频指令生成。\nAudio must be a clear Mandarin Chinese voice reading the poem aloud.\nUse natural human narration only.\nRead the poem text exactly as provided.\nDo not add flute music, background music, singing, sound effects, wind noise, ambient sound, explanation, commentary, or extra words.\nThe voice should be calm, poetic, and synchronized within the 15-second video.\n音频必须是自然普通话人声朗读当前完整诗词，只朗读诗词正文，不要解释、旁白扩写、音乐、笛声、环境音、风声、马蹄声或其他音效。\nVoiceover text / 朗读文本：\n单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。\ntitle: \nauthor: \ndynasty: 唐\ncontent: 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。\nplaces: 大漠\nimagery: 大漠风光, 自然意象, 边塞军旅\nemotion: 思乡\nanalysis_text: \nvoiceover_script: 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。\n请将河西走廊相关地貌、地点、意象和情绪融合进镜头运动与光影变化，形成一段完整、克制、连贯的诗意视频。\n\nVISUAL ANCHOR: the supplied image_url is the first frame and master reference for the whole video, not merely a loose inspiration.\nUse the provided image as the opening first frame and continue the narrative beyond the first frame, not a subtle looping animation.\nUse the provided image as the exact opening first frame. After the first frame, continue into a cinematic narrative sequence with clear scene progression, not just subtle motion or slight camera shake. Do not remain a near-static animated illustration.\nContinue from this image into a 15-second narrative sequence. Do not create a new unrelated opening scene. Do not merely animate the still image.\nThe first 0-1 seconds should match the original composition, then the film must move beyond a poster-like animation into new connected foreground, midground, and background details.\nAfter the first frame, generate visible narrative progression: clouds travel across the sky, wind and sand flow across the road or sandbar, water or riverbank texture moves, willow branches sway, birds cross the frame, a distant traveler walks, a camel caravan passes far away, and the camera slowly pushes or tracks from the opening scene toward the gate, mountains, sandbars, and old road. Maintain the same ink-wash Chinese style, same location, same atmosphere, and natural continuity from the first frame.\nThe clip must open exactly from the first-frame composition, then naturally extend outward into new connected story beats and later visual changes.\nDo not only add minor shaking, breathing, slow zoom, or a cinemagraph effect to the original image; create visible narrative development after the opening frame.\n必须以当前意境图作为开场首帧，后续画面要继续生成叙事变化，而不是只让原图轻微晃动。\nPreserve the same main subject, architecture or landscape layout, horizon, road/wall/water direction, color palette, brush texture, lighting, and guofeng ink-wash pale-color illustration style from beginning to end.\nCONTINUITY: create one connected poetic story inside the same world. The camera may push, track, pan, orbit, or pull back, but every new beat must grow naturally from the previous frame.\nDo not jump to an unrelated location, new costume style, new season, new weather system, or new visual universe.\nSTYLE LOCK: keep a Chinese ink-wash + pale color + illustrated cinematic look for the entire clip.\nDo not become photorealistic, live-action, real photo look, documentary footage, modern footage, 3D render, or stock-video style.\nCONTINUOUS STORY ARC: 以首帧为开场，保留首帧中的主体、构图、色调和水墨淡彩笔触；0-3 秒在 A distant gate town, ancient road, willow line, sandbar, mountains, and open desert horizon in the Hexi Corridor. 中让风沙流动、云影移动、水面或沙洲纹理变化、杨柳摇曳，建立 大漠 的边塞氛围；3-6 秒镜头自然推进到关城、城墙、古道、沙漠、远山或首帧已有景物的细节，空间层次明显变化；6-10 秒让旅人远景、驼队远景、飞鸟、云影或诗中主体转身、伫立、回望或缓步前行，在 A frontier road or open ground where the traveler can visibly advance through space and reveal another layer of the world. 中形成故事动作；10-13 秒跟随旅人/驼队/风沙继续前进，画面向关隘、沙漠、远山、城墙或道路深处递进；13-15 秒在 A closing landscape frame with road, wind, far mountains, and fading human presence so the story resolves into space. 中完成情绪收束。全程围绕诗词意象 大漠风光, 自然意象, 边塞军旅 和情绪 思乡 展开，不跳到无关新场景。\nsource_image_url: \n\n补充视频导演要求：English hard rule: Use the provided image as the exact opening first frame. After the first frame, continue into a cinematic narrative sequence with clear scene progression, not just subtle motion or slight camera shake. Do not remain a near-static animated illustration. Continue from this image into a 15-second narrative sequence. Do not create a new unrelated opening scene. Do not merely animate the still image. The first 0-1 seconds should match the original composition, then the film must move beyond a poster-like animation into new connected foreground, midground, and background details. 镜头分段必须保留：0-3 秒严格从输入首帧开场，第一秒保持首帧构图可辨，然后风起云动，水流、沙洲、草木、柳枝或水墨纹理开始变化；3-10 秒旅人沿河道或古道前行，镜头缓慢推进或平移，远处关城逐渐靠近，飞鸟掠过，月色、云影、水面、风沙和柳枝持续变化；10-15 秒镜头继续推进到关隘、远山或沙洲，环境光影变化增强，形成思乡、边塞、旅途的故事感结尾。自动叙事线：以首帧为开场，保留首帧中的主体、构图、色调和水墨淡彩笔触；0-3 秒在 A distant gate town, ancient road, willow line, sandbar, mountains, and open desert horizon in the Hexi Corridor. 中让风沙流动、云影移动、水面或沙洲纹理变化、杨柳摇曳，建立 大漠 的边塞氛围；3-6 秒镜头自然推进到关城、城墙、古道、沙漠、远山或首帧已有景物的细节，空间层次明显变化；6-10 秒让旅人远景、驼队远景、飞鸟、云影或诗中主体转身、伫立、回望或缓步前行，在 A frontier road or open ground where the traveler can visibly advance through space and reveal another layer of the world. 中形成故事动作；10-13 秒跟随旅人/驼队/风沙继续前进，画面向关隘、沙漠、远山、城墙或道路深处递进；13-15 秒在 A closing landscape frame with road, wind, far mountains, and fading human presence so the story resolves into space. 中完成情绪收束。全程围绕诗词意象 大漠风光, 自然意象, 边塞军旅 和情绪 思乡 展开，不跳到无关新场景。关键词动态叙事元素：地点 大漠；意象 大漠风光, 自然意象, 边塞军旅；情绪 思乡。这些关键词必须转化为云层移动、风沙流动、水面流动、柳枝摇曳、飞鸟掠过、旅人行走、驼队远景经过、远山、关隘、道路、月色或光影推进等可见动态元素。配音要求：audio=true；Audio must be a clear Mandarin Chinese voice reading the poem aloud. Use natural human narration only. Read the poem text exactly as provided. Do not add flute music, background music, singing, sound effects, wind noise, ambient sound, explanation, commentary, or extra words. The voice should be calm, poetic, and synchronized within the 15-second video. 音频必须是自然普通话人声朗读当前完整诗词，只朗读诗词正文，不要解释、旁白扩写、音乐、笛声、环境音、风声、马蹄声或其他音效。 Voiceover text / 朗读文本： 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。负面要求：不要静态图轻微抖动，不要只做原图慢推，不要只有局部风动，不要近静态插画动效，不要突然切镜，不要字幕，不要文字排版，不要水印，不要 logo，不要地图，不要坐标轴，不要现代广告海报，不要采访感旁白。Storyboard: Continuity lock: each shot must reuse the same reference-image world, color family, illustrated brushwork, lighting direction, and spatial relationship between foreground, subject, and background. Shot transitions must be motivated by camera movement, wind, dust, water, cloth, willow branches, cloud layers, or light changes, not by replacing the scene. Do not introduce photorealistic texture, real-camera footage, photographic skin, modern clothing, modern buildings, or a completely new scene. Shot 1 Opening Frontier Establishing: A distant gate town, ancient road, willow line, sandbar, mountains, and open desert horizon in the Hexi Corridor.; Open from the exact supplied first-frame composition, keep the same road, water, dunes, mountains, trees, gate-town, sandbar, or architectural silhouettes; then wind, sand, water texture, willow branches, cloud layers, birds, and ink diffusion begin to move inside that same world.; Hold the first frame long enough to recognize it, then make a restrained push inward without replacing the scene.; Austere anticipation and frontier vastness.. Shot 2 Traveler Advances: A frontier road or open ground where the traveler can visibly advance through space and reveal another layer of the world.; A distant traveler, camel caravan, willow branch, dust stream, water surface, flying bird, or cloud shadow advances within the same image-world, creating a clear story beat rather than a tiny loop.; Track through the same space from wide to medium and reveal depth layers toward the pass, wall, desert road, distant mountains, or architecture details without changing art style.; Narrative momentum and determination.. Shot 3 Pause and Look Back: A relay road bend, ridge, watchtower edge, or borderland stop where the traveler can pause and react.; The traveler pauses, turns back, lifts the head, or looks toward the far gate town, letting emotion surface before moving on. Let willow leaves, sand, water ripples, cloud shadows, or ink washes respond around the figure; keep the same distant traveler silhouette, landscape geometry, and color palette as the reference image.; Use a side-follow or slight arc in the same location to show the figure pausing, turning, raising the head, or slowly walking onward before the next beat.; Reflection, homesickness, or restrained frontier lyricism.. Shot 4 Closing Empty Shot: A closing landscape frame with road, wind, far mountains, and fading human presence so the story resolves into space.; Let the traveler, camel caravan, or focal landscape element move deeper toward the pass, road, desert, sandbar, gate town, or far mountains, then become a silhouette, exit, or diminish inside the same landscape so the ending lands on environment and feeling.; Pull back or glide toward a detail of the gate, desert, far ridge, or city wall, then let the frame breathe into a calm concluding composition that still matches the supplied image.; Aftertaste, distance, and emotional resolution..",
+    "storyboard_preview": {
+      "narration_text": "单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。",
+      "shots": [
+        {
+          "order": 1,
+          "scene": "A distant gate town, ancient road, willow line, sandbar, mountains, and open desert horizon in the Hexi Corridor.",
+          "visual_prompt": "Generate one short narrative video segment in a guofeng ink-wash pale-color illustrated cinematic style. This is shot 1 of 4 in a chronological classical-poetry narrative short film. It must clearly continue the previous story beat rather than looping one still frame. The reference image is the visual anchor for this segment and the entire film; begin from it and then extend into visible story action, not a static-image micro-motion loop. Preserve its subject identity, architecture/landscape layout, horizon, composition, color palette, brush texture, lighting direction, and poetic frontier mood. Poem line focus: 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。. Dynasty: 唐. Location: 大漠. Dynasty context: 唐. Emotion arc: 思乡. Imagery: 大漠风光, 自然意象, 边塞军旅. Scene continuity requirement: Treat the poetry landscape image as the narrative anchor, not as a single-person portrait. Animate frontier wind, sand, clouds, banners, roads, distant architecture, light, and camera movement; if a person is present, keep the motion natural and secondary.. Scene: A distant gate town, ancient road, willow line, sandbar, mountains, and open desert horizon in the Hexi Corridor.. Action: Open from the exact supplied first-frame composition, keep the same road, water, dunes, mountains, trees, gate-town, sandbar, or architectural silhouettes; then wind, sand, water texture, willow branches, cloud layers, birds, and ink diffusion begin to move inside that same world.. Camera: Hold the first frame long enough to recognize it, then make a restrained push inward without replacing the scene.. Emotional beat: Austere anticipation and frontier vastness.. Narration for this segment: 单车欲问边，属国过居延。. The video must show visible movement, blocking changes, spatial depth, and story progression while staying in the same reference-image world. Do not make a cinemagraph, do not keep a single scene loop, do not rely on only subtle motion, slight shake, breathing, or slow zoom. Do not become photorealistic, real photo look, live action, documentary footage, modern footage, 3D render, or stock-video style.",
+          "duration": 3.0,
+          "place": "大漠",
+          "imagery": [
+            "大漠风光",
+            "自然意象",
+            "边塞军旅"
+          ],
+          "emotion": "Austere anticipation and frontier vastness."
+        },
+        {
+          "order": 2,
+          "scene": "A frontier road or open ground where the traveler can visibly advance through space and reveal another layer of the world.",
+          "visual_prompt": "Generate one short narrative video segment in a guofeng ink-wash pale-color illustrated cinematic style. This is shot 2 of 4 in a chronological classical-poetry narrative short film. It must clearly continue the previous story beat rather than looping one still frame. The reference image is the visual anchor for this segment and the entire film; begin from it and then extend into visible story action, not a static-image micro-motion loop. Preserve its subject identity, architecture/landscape layout, horizon, composition, color palette, brush texture, lighting direction, and poetic frontier mood. Poem line focus: 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。. Dynasty: 唐. Location: 大漠. Dynasty context: 唐. Emotion arc: 思乡. Imagery: 大漠风光, 自然意象, 边塞军旅. Scene continuity requirement: Treat the poetry landscape image as the narrative anchor, not as a single-person portrait. Animate frontier wind, sand, clouds, banners, roads, distant architecture, light, and camera movement; if a person is present, keep the motion natural and secondary.. Scene: A frontier road or open ground where the traveler can visibly advance through space and reveal another layer of the world.. Action: A distant traveler, camel caravan, willow branch, dust stream, water surface, flying bird, or cloud shadow advances within the same image-world, creating a clear story beat rather than a tiny loop.. Camera: Track through the same space from wide to medium and reveal depth layers toward the pass, wall, desert road, distant mountains, or architecture details without changing art style.. Emotional beat: Narrative momentum and determination.. Narration for this segment: 征蓬出汉塞，归雁入胡天。. The video must show visible movement, blocking changes, spatial depth, and story progression while staying in the same reference-image world. Do not make a cinemagraph, do not keep a single scene loop, do not rely on only subtle motion, slight shake, breathing, or slow zoom. Do not become photorealistic, real photo look, live action, documentary footage, modern footage, 3D render, or stock-video style.",
+          "duration": 4.0,
+          "place": "大漠",
+          "imagery": [
+            "大漠风光",
+            "自然意象",
+            "边塞军旅"
+          ],
+          "emotion": "Narrative momentum and determination."
+        },
+        {
+          "order": 3,
+          "scene": "A relay road bend, ridge, watchtower edge, or borderland stop where the traveler can pause and react.",
+          "visual_prompt": "Generate one short narrative video segment in a guofeng ink-wash pale-color illustrated cinematic style. This is shot 3 of 4 in a chronological classical-poetry narrative short film. It must clearly continue the previous story beat rather than looping one still frame. The reference image is the visual anchor for this segment and the entire film; begin from it and then extend into visible story action, not a static-image micro-motion loop. Preserve its subject identity, architecture/landscape layout, horizon, composition, color palette, brush texture, lighting direction, and poetic frontier mood. Poem line focus: 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。. Dynasty: 唐. Location: 大漠. Dynasty context: 唐. Emotion arc: 思乡. Imagery: 大漠风光, 自然意象, 边塞军旅. Scene continuity requirement: Treat the poetry landscape image as the narrative anchor, not as a single-person portrait. Animate frontier wind, sand, clouds, banners, roads, distant architecture, light, and camera movement; if a person is present, keep the motion natural and secondary.. Scene: A relay road bend, ridge, watchtower edge, or borderland stop where the traveler can pause and react.. Action: The traveler pauses, turns back, lifts the head, or looks toward the far gate town, letting emotion surface before moving on. Let willow leaves, sand, water ripples, cloud shadows, or ink washes respond around the figure; keep the same distant traveler silhouette, landscape geometry, and color palette as the reference image.. Camera: Use a side-follow or slight arc in the same location to show the figure pausing, turning, raising the head, or slowly walking onward before the next beat.. Emotional beat: Reflection, homesickness, or restrained frontier lyricism.. Narration for this segment: 大漠孤烟直，长河落日圆。. The video must show visible movement, blocking changes, spatial depth, and story progression while staying in the same reference-image world. Do not make a cinemagraph, do not keep a single scene loop, do not rely on only subtle motion, slight shake, breathing, or slow zoom. Do not become photorealistic, real photo look, live action, documentary footage, modern footage, 3D render, or stock-video style.",
+          "duration": 4.0,
+          "place": "大漠",
+          "imagery": [
+            "大漠风光",
+            "自然意象",
+            "边塞军旅"
+          ],
+          "emotion": "Reflection, homesickness, or restrained frontier lyricism."
+        },
+        {
+          "order": 4,
+          "scene": "A closing landscape frame with road, wind, far mountains, and fading human presence so the story resolves into space.",
+          "visual_prompt": "Generate one short narrative video segment in a guofeng ink-wash pale-color illustrated cinematic style. This is shot 4 of 4 in a chronological classical-poetry narrative short film. It must clearly continue the previous story beat rather than looping one still frame. The reference image is the visual anchor for this segment and the entire film; begin from it and then extend into visible story action, not a static-image micro-motion loop. Preserve its subject identity, architecture/landscape layout, horizon, composition, color palette, brush texture, lighting direction, and poetic frontier mood. Poem line focus: 单车欲问边，属国过居延。征蓬出汉塞，归雁入胡天。大漠孤烟直，长河落日圆。萧关逢候骑，都护在燕然。. Dynasty: 唐. Location: 大漠. Dynasty context: 唐. Emotion arc: 思乡. Imagery: 大漠风光, 自然意象, 边塞军旅. Scene continuity requirement: Treat the poetry landscape image as the narrative anchor, not as a single-person portrait. Animate frontier wind, sand, clouds, banners, roads, distant architecture, light, and camera movement; if a person is present, keep the motion natural and secondary.. Scene: A closing landscape frame with road, wind, far mountains, and fading human presence so the story resolves into space.. Action: Let the traveler, camel caravan, or focal landscape element move deeper toward the pass, road, desert, sandbar, gate town, or far mountains, then become a silhouette, exit, or diminish inside the same landscape so the ending lands on environment and feeling.. Camera: Pull back or glide toward a detail of the gate, desert, far ridge, or city wall, then let the frame breathe into a calm concluding composition that still matches the supplied image.. Emotional beat: Aftertaste, distance, and emotional resolution.. Narration for this segment: 萧关逢候骑，都护在燕然。. The video must show visible movement, blocking changes, spatial depth, and story progression while staying in the same reference-image world. Do not make a cinemagraph, do not keep a single scene loop, do not rely on only subtle motion, slight shake, breathing, or slow zoom. Do not become photorealistic, real photo look, live action, documentary footage, modern footage, 3D render, or stock-video style.",
+          "duration": 4.0,
+          "place": "大漠",
+          "imagery": [
+            "大漠风光",
+            "自然意象",
+            "边塞军旅"
+          ],
+          "emotion": "Aftertaste, distance, and emotional resolution."
+        }
+      ],
+      "source": "prompt_builder.build_storyboard"
+    }
+  },
+  "image": {
+    "status": "succeeded",
+    "provider": "local_demo",
+    "image_url": "/static/demo/shizhisaishang/image.png",
+    "normalized_image_url": "/static/demo/shizhisaishang/image.png"
+  },
+  "ai_video": {
+    "status": "succeeded",
+    "provider": "local_demo",
+    "video_url": "/static/demo/shizhisaishang/video.mp4",
+    "normalized_video_url": "/static/demo/shizhisaishang/video.mp4"
+  },
+  "geojson": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            96.0,
+            40.5
+          ]
+        },
+        "properties": {
+          "text": "大漠孤烟直，长河落日圆",
+          "dynasty": {
+            "id": "DYN_TANG",
+            "label": "唐",
+            "confidence": 0.9825,
+            "probabilities": {
+              "DYN_TANG": 0.9825,
+              "DYN_SONG": 0.0035,
+              "DYN_WUDAI": 0.014
+            }
+          },
+          "place": {
+            "id": "PLC_DAMO",
+            "label": "大漠",
+            "confidence": 0.9392,
+            "probabilities": {
+              "PLC_YUMENGUAN": 0.0027,
+              "PLC_YANGGUAN": 0.0056,
+              "PLC_SHAZHOU": 0.0083,
+              "PLC_DUNHUANG": 0.0072,
+              "PLC_GUAZHOU": 0.0076,
+              "PLC_YUMEN": 0.0023,
+              "PLC_JIUQUAN": 0.0017,
+              "PLC_GANZHOU": 0.0024,
+              "PLC_WUWEI": 0.0019,
+              "PLC_LIANGZHOU": 0.0034,
+              "PLC_HEXI": 0.0067,
+              "PLC_DAMO": 0.9392,
+              "PLC_HANHAI": 0.0067,
+              "PLC_LIUSHA": 0.0044
+            },
+            "coordinates": {
+              "place": "大漠",
+              "lon": 96.0,
+              "lat": 40.5,
+              "source": "poems_master.csv",
+              "support": 69
+            }
+          },
+          "imagery": {
+            "threshold": 0.5,
+            "labels": [
+              {
+                "id": "IMG_DESERT",
+                "label": "大漠风光",
+                "confidence": 0.7883
+              },
+              {
+                "id": "IMG_NATURE",
+                "label": "自然意象",
+                "confidence": 0.6909
+              },
+              {
+                "id": "IMG_FRONTIER",
+                "label": "边塞军旅",
+                "confidence": 0.5825
+              }
+            ],
+            "confidence": 0.7883,
+            "probabilities": {
+              "IMG_FRONTIER": 0.5825,
+              "IMG_DESERT": 0.7883,
+              "IMG_PASS": 0.4628,
+              "IMG_HOMESICK": 0.363,
+              "IMG_NATURE": 0.6909,
+              "IMG_FEAST": 0.3127
+            },
+            "icons": [
+              {
+                "id": "IMG_DESERT",
+                "label": "大漠风光",
+                "icon": "dunes",
+                "confidence": 0.7883
+              },
+              {
+                "id": "IMG_NATURE",
+                "label": "自然意象",
+                "icon": "leaf",
+                "confidence": 0.6909
+              },
+              {
+                "id": "IMG_FRONTIER",
+                "label": "边塞军旅",
+                "icon": "shield",
+                "confidence": 0.5825
+              }
+            ],
+            "primary_icon": "dunes"
+          },
+          "emotion": {
+            "id": "EMO_HOMESICK",
+            "label": "思乡",
+            "confidence": 0.3344,
+            "probabilities": {
+              "EMO_SORROWFUL": 0.1715,
+              "EMO_BOLD": 0.1085,
+              "EMO_HOMESICK": 0.3344,
+              "EMO_MELANCHOLY": 0.2629,
+              "EMO_LEISURELY": 0.0917,
+              "EMO_INDIGNANT": 0.031
+            },
+            "color": "#2563eb"
+          },
+          "confidence": {
+            "dynasty": 0.9825,
+            "place": 0.9392,
+            "imagery": 0.7883,
+            "emotion": 0.3344
+          },
+          "popup": "<strong>大漠孤烟直，长河落日圆</strong><br/>地点：大漠 (0.9392)<br/>情绪：思乡 (0.3344)<br/>意象：大漠风光, 自然意象, 边塞军旅"
+        }
+      }
+    ],
+    "metadata": {
+      "format": "geojson",
+      "coordinate_source": "poems_master.csv",
+      "model": {
+        "mode": "saved_local_demo",
+        "device": "cpu"
+      }
+    }
+  },
+  "demo_case_id": "shizhisaishang-damo"
+}

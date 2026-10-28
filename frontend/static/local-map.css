@@ -1,0 +1,7 @@
+#map { background: #eeecdf; }
+#map::after { display: none; }
+#map .leaflet-image-layer { max-width: none !important; max-height: none !important; }
+#map .leaflet-control-zoom { border: 1px solid #d6d3c2; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 12px #574a3026; }
+#map .leaflet-control-zoom a { color: #295e4d; background: #fffdf6; }
+#map .leaflet-popup-content-wrapper { background: #fffbf0; border-radius: 14px; }
+#map .leaflet-tooltip { background: #fffbf0; color: #283e31; }

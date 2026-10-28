@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "task": "place",
+    "description": "河西走廊诗词地名标签体系（14个历史地名，坐标来自静态映射，100%覆盖；泛地名需人工校对）",
+    "total_classes": 14,
+    "auto_generated": true,
+    "needs_human_review": true,
+    "current_coverage": "1230/1230（100%，全部来自 keywords 字段关键词映射）"
+  },
+  "labels": [
+    {"id": "PLC_YANGGUAN",    "zh": "阳关",   "en": "Yangguan",    "lat": 39.98, "lon": 94.08, "count": 167, "is_specific": true,  "note": "具体关口，坐标可信"},
+    {"id": "PLC_GANZHOU",     "zh": "甘州",   "en": "Ganzhou",     "lat": 38.93, "lon": 100.45,"count": 157, "is_specific": true,  "note": "今张掖市，坐标可信"},
+    {"id": "PLC_JIUQUAN",     "zh": "酒泉",   "en": "Jiuquan",     "lat": 39.74, "lon": 98.49, "count": 152, "is_specific": true,  "note": "坐标可信"},
+    {"id": "PLC_DUNHUANG",    "zh": "敦煌",   "en": "Dunhuang",    "lat": 40.14, "lon": 94.66, "count": 135, "is_specific": true,  "note": "坐标可信"},
+    {"id": "PLC_LIUSHA",      "zh": "流沙",   "en": "Liusha",      "lat": 40.00, "lon": 93.50, "count": 130, "is_specific": false, "note": "泛地名/意象性，坐标为参考值，需人工校对"},
+    {"id": "PLC_HEXI",        "zh": "河西",   "en": "Hexi",        "lat": 39.50, "lon": 99.00, "count": 111, "is_specific": false, "note": "泛地名，指河西走廊整体，坐标为中心参考值，需人工校对"},
+    {"id": "PLC_LIANGZHOU",   "zh": "凉州",   "en": "Liangzhou",   "lat": 37.93, "lon": 102.64,"count": 96,  "is_specific": true,  "note": "今武威市，坐标可信"},
+    {"id": "PLC_HANHAI",      "zh": "瀚海",   "en": "Hanhai",      "lat": 41.00, "lon": 96.00, "count": 88,  "is_specific": false, "note": "泛地名/意象性（戈壁大漠），坐标为参考值，需人工校对"},
+    {"id": "PLC_DAMO",        "zh": "大漠",   "en": "Damo",        "lat": 40.50, "lon": 96.00, "count": 69,  "is_specific": false, "note": "泛地名/意象性，需人工校对"},
+    {"id": "PLC_WUWEI",       "zh": "武威",   "en": "Wuwei",       "lat": 37.93, "lon": 102.64,"count": 60,  "is_specific": true,  "note": "坐标可信"},
+    {"id": "PLC_GUAZHOU",     "zh": "瓜州",   "en": "Guazhou",     "lat": 40.52, "lon": 95.78, "count": 37,  "is_specific": true,  "note": "坐标可信"},
+    {"id": "PLC_SHAZHOU",     "zh": "沙州",   "en": "Shazhou",     "lat": 40.14, "lon": 94.66, "count": 20,  "is_specific": true,  "note": "敦煌别称，坐标可信"},
+    {"id": "PLC_YUMEN",       "zh": "玉门",   "en": "Yumen",       "lat": 40.27, "lon": 97.04, "count": 4,   "is_specific": true,  "note": "坐标可信"},
+    {"id": "PLC_YUMENGUAN",   "zh": "玉门关", "en": "Yumenguan",   "lat": 40.40, "lon": 90.88, "count": 4,   "is_specific": true,  "note": "具体关口，坐标可信"}
+  ],
+  "auto_rule": {
+    "type": "keyword_priority_match",
+    "priority_order": ["玉门关","阳关","沙州","敦煌","瓜州","玉门","酒泉","张掖","甘州","山丹","武威","凉州","凉州曲","河西","大漠","瀚海","流沙"],
+    "note": "多关键词时按 priority_order 取优先级最高的具体地名；泛地名（is_specific=false）最终坐标应人工结合诗意校对。"
+  }
+}
